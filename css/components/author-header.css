@@ -1,0 +1,32 @@
+.author-header__name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-header__name-insta {
+  display: flex;
+  position: relative;
+}
+
+.author-header__name-insta i {
+  z-index: 1;
+  position: absolute;
+  right: 50px;
+  opacity: 100;
+  transform: translateX(0px);
+  transition: transform 1s ease-in-out;
+}
+
+.author-header__name-insta span {
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.author-header__name-insta i:hover {
+  transform: translateX(-70px);
+}
+
+.author-header__name-insta i:hover + span {
+  opacity: 100;
+}
