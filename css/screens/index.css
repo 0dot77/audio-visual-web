@@ -10,16 +10,20 @@
 }
 
 @keyframes audioEffect {
-  from {
+  0% {
     transform: scale(0.8);
   }
-  to {
+  50% {
     transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
   }
 }
 
 .index-header__title > span:first-child {
-  animation: audioEffect 500ms cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  animation: audioEffect 1000ms cubic-bezier(0.86, 0, 0.07, 1) infinite;
 }
 
 .index-screen__items a {
