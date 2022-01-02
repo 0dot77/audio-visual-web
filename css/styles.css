@@ -4,3 +4,9 @@
 /* Components */
 @import "components/author-header.css";
 @import "components/video.css";
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
