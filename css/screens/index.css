@@ -13,6 +13,22 @@
   justify-content: center;
 }
 
+.index-screen__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.index-screen__items > span {
+  align-content: center;
+  margin-bottom: 100px;
+  font-size: 50px;
+  font: italic 1.2em "Fira Sans", serif;
+  border-bottom: 1px dashed blue;
+}
+
 @keyframes audioEffect {
   0% {
     transform: scale(0.8);
