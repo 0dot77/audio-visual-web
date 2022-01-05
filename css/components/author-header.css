@@ -3,6 +3,11 @@
   justify-content: space-between;
 }
 
+.author-header > .author-header__yoo,
+.author-header__lee {
+  font-family: "Reenie Beanie", cursive;
+}
+
 .author-header__name-insta {
   display: flex;
   position: relative;
