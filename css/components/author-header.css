@@ -1,6 +1,8 @@
 .author-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .author-header > .author-header__yoo,
@@ -8,30 +10,10 @@
   font-family: "Reenie Beanie", cursive;
 }
 
-.author-header__name-insta {
+.author-header__insta {
   display: flex;
-  position: relative;
-}
-
-.author-header__name-insta i {
-  z-index: 1;
+  justify-content: center;
   position: absolute;
-  left: 55px;
-  opacity: 100;
-  transform: translateX(0px);
-  transition: transform 1s ease-in-out;
-}
-
-.author-header__name-insta span {
-  z-index: 0;
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-}
-
-.author-header__name-insta i:hover {
-  transform: translateX(-80px);
-}
-
-.author-header__name-insta i:hover + span {
-  opacity: 100;
+  width: 100%;
+  right: 50px;
 }
