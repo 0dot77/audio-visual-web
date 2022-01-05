@@ -1,8 +1,7 @@
 .author-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .author-header > .author-header__yoo,
@@ -10,10 +9,14 @@
   font-family: "Reenie Beanie", cursive;
 }
 
-.author-header__insta {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  right: 50px;
+.author-header__yoo > a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.author-header__lee > a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: black;
 }
