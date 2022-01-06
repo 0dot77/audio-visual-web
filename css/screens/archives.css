@@ -1,9 +1,18 @@
 .main-video {
-  left: 0;
-  top: 0;
-  height: 100%;
+  display: inline;
+  vertical-align: middle;
   width: 100%;
+}
+
+.main-archive {
+  display: flex;
+  justify-content: space-between;
   position: relative;
+}
+
+.main-archive__video {
+  vertical-align: middle;
+  border: 2px solid red;
 }
 
 .main-videos__stack {
