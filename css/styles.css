@@ -1,9 +1,9 @@
 /* Screens */
 @import "screens/index.css";
+@import "screens/archives.css";
 
 /* Components */
 @import "components/author-header.css";
-@import "components/video.css";
 
 html,
 body {
