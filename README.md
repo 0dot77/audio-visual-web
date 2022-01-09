@@ -1,3 +1,6 @@
-# audio-visual-web
+# Audio-Visual-Projects Web Archive
 
-Audio Visual Projects. It is updated every two weeks.
+## Creator
+
+- _Music_ : LEE Hye Jin
+- _Visual_ : YOO Tae Yang
