@@ -1,12 +1,9 @@
+/* Defalut setting */
+@import "reset.css";
+
 /* Screens */
 @import "screens/index.css";
 @import "screens/archives.css";
 
 /* Components */
 @import "components/author-header.css";
-
-html,
-body {
-  margin: 0;
-  height: 100%;
-}
