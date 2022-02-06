@@ -1,12 +1,6 @@
-/* Defalut setting */
-@import "reset.css";
-
 /* Screen */
 @import "index.css";
 @import "screens/archives.css";
-
-/* Components */
-@import "components/author-header.css";
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;900&display=swap');
