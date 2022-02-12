@@ -1,15 +1,32 @@
-'use strict';
-/*
-네비게이션바를 스크롤링 하면,
-폰트 크기, 박스 크기, 줄어들면서 위치에 안착되도록 하기
-*/
+"use strict";
+const navText = document.getElementById("title");
+// const screenNav = document.querySelector(".screen-nav");
 
 // 스크롤 하면 폰트의 사이즈가 줄어드는 이벤트 만들어보기
+
+// 값을 새로 맵핑해주는 함수
+const remapValue = function (n, start1, stop1, start2, stop2) {
+  const newVal = ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
+  return newVal;
+};
+
+window.addEventListener("scroll", () => {
+  // 스크롤이 되었을 때, font size가 줄어들도록
+
+  const scrollValue = remapValue(
+    window.scrollY,
+    window.scrollY,
+    window.innerHeight,
+    0,
+    100
+  );
+
+  console.log(`scroll value : ${scrollValue}`);
+});
+
 // 갑자기 아래 쪽으로 스냅이 되는 문제를 해결해야할 것 같음
 
-let titleText = document.getElementById('title');
-let screenNav = document.querySelector('.screen-nav');
-
+/*
 let defaultTitleTextSize = 300;
 let scrollValue;
 
@@ -38,3 +55,4 @@ const navHeight = function(windowValue) {
 
 window.addEventListener('scroll', titleScroll);
 window.addEventListener('scroll', navHeight);
+*/
