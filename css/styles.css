@@ -1,5 +1,5 @@
 /* Screen */
-@import "index.css";
+@import "screens/index.css";
 @import "screens/archives.css";
 
 /* Font */
@@ -7,6 +7,8 @@
 
 :root {
   --main-font-color: rgb(0, 247, 255);
+  --section-divider: blue;
+  --section-height: 100vh;
 }
 
 * {
@@ -16,13 +18,17 @@
 }
 
 body {
-  background-color: gray;
+  display: flex;
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 37, 84) 11.2%,
+    rgba(0, 37, 84, 0.32) 100.2%
+  );
   color: var(--main-font-color);
   font-family: "Noto Serif KR", serif;
-  height: 2000px;
+  overflow: hidden;
 }
 
-/* 스크롤바 없애기 */
-body::-webkit-scrollbar {
+.hidden {
   display: none;
 }
